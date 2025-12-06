@@ -22,6 +22,6 @@ Feature: search headphones then buy within given budget
     Then User verifies the cart has <numberOfItems> items priced from <minOfBudget> to <maxOfBudget>
 
     Examples:
-      |  | item       | minOfItemPrice | maxOfItemPrice | numberOfItems | minOfBudget | maxOfBudget |
-      |  | headphones | 100            | 300            | 3             | 410         | 510         |
-      |  | headphones | 100            | 300            | 4             | 500         | 1000        |
+      | item       | minOfItemPrice | maxOfItemPrice | numberOfItems | minOfBudget | maxOfBudget |
+      | headphones | 100            | 300            | 3             | 410         | 510         |
+      | headphones | 100            | 300            | 4             | 500         | 1000        |

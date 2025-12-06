@@ -73,7 +73,7 @@ vodafoneWebTask/
   ```gherkin
   Scenario: Browse noon and search for headsets
     Given User opens the browser
-    When User navigates to "https://www.noon.com/egypt-en/"
+    When User navigates to the homepage
     And User searches for "headphones"
     Then User verifies the cart has 3 items priced from 490 to 510
   ```
