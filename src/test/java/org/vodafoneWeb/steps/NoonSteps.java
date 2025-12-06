@@ -25,7 +25,7 @@ public class NoonSteps {
         cartHelper = new ShoppingCartHelper(driver);
     }
 
-    @Given("User navigates to the homepage")
+    @And("User navigates to the homepage")
     public void user_navigates_to_homepage() {
         String baseUrl = configReader.get("baseUrl");
         homePage.openUrl(baseUrl);
