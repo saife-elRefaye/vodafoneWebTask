@@ -2,8 +2,9 @@ Feature: Navigate to Electronics category then filter and validate
 
   Background:
     Given User opens the browser
-    And   User navigates to the homepage
+    And User navigates to the homepage
 
+  @Regression @bBrowseCategory
   Scenario: Browse Electronics and apply Samsung filter
     When User selects category "Electronics"
     And User applies brand filter "Samsung" in category "Electronics"
@@ -12,6 +13,7 @@ Feature: Navigate to Electronics category then filter and validate
     And User sorts results by Best Rated
     Then User should see items matching category "Electronics", brand "Samsung", price from "1000" to "3000"
 
+  @Regression @bBrowseMultiCategory
     Scenario Outline: Browse category and apply brand & price range filter
       When User selects category "<category>"
       And User applies brand filter "<brand>" in category "<category>"
